@@ -191,7 +191,7 @@ app.post('/signUp', (req,res)=>{
 });
 
 app.post('/forget',(req,res) => {
-    sendMail(req.body.login_email, 'Reset Your Password On iCrowdTask', '<h1>use the link to reset the password</h1> <a href="https://<project name>.herokuapp.com/reset">Reset Password Now!</a>');
+    sendMail(req.body.login_email, 'Reset Your Password On iCrowdTask', '<h1>use the link to reset the password</h1> <a href="https://liuyijin-icrowdtask.herokuapp.com/reset">Reset Password Now!</a>');
     res.send("The email has been sent, remember to check the spam mailbox!");
 });
 
