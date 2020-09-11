@@ -113,7 +113,7 @@ app.get('/auth/google',
 app.get('/auth/google/callback',(req,res) => {
     // Successful authentication, redirect home.
     req.session.sign = true;
-    res.redirect('/myPage');
+    res.redirect('/homepage');
 });
 
 mongoose.connect("mongodb+srv://Liu:WXYvQrfJ7Os3kyG7@cluster0.jjc6o.mongodb.net/users?retryWrites=true&w=majority", {useNewUrlParser: true, useUnifiedTopology: true});
