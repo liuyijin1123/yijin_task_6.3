@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>iCrowdTask SignIn</title>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<style>
+    .page{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-position: center,center;
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    #pagebg{
+        background-image: url("image/background.jpeg");
+    }
+
+    .card{
+        background-color: rgba(255,255,255,0.7);
+        width: 400px;
+        margin: 45px auto 0;
+    }
+
+    .introduction {
+        text-align: center;
+        float: left;
+        height: 200px;
+        width: 100%;
+    }
+    .welcome {
+        font-size: 100px;
+        color: whitesmoke;
+        opacity: 0.8;
+        font-weight: bold;
+    }
+    .welcome:hover {
+        opacity: 1.0;
+        font-weight: bolder;
+    }
+
+
+</style>
+</head>
+<body>
+<div class="page" id="pagebg">
+
+    <hr>
+
+    <form action="/" method="post">
+        <div class="card">
+            <article class="card-body">
+                    <a href="/signUp" class="float-right btn btn-outline-primary">Sign up</a>
+                <h4 class="card-title mb-4 mt-1">Sign in</h4>
+                <form>
+                    <div class="form-group">
+                        <label>Your email</label>
+                        <input name="login_email" class="form-control" placeholder="Email" type="email">
+                    </div> <!-- form-group// -->
+                    <div class="form-group">
+                        <a class="float-right" href="/forget">Forgot?</a>
+                        <label>Your password</label>
+                        <input name="login_password" class="form-control" placeholder="password" type="password">
+                    </div> <!-- form-group// -->
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <label> <input name="save_password" type="checkbox"> Save password </label>
+                        </div> <!-- checkbox .// -->
+                    </div> <!-- form-group// -->
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary btn-block"> Login </button>
+                        <button class="btn btn-primary btn-block"><img src="https://img.icons8.com/clouds/30/000000/google-logo.png"/><a href="/auth/google" style="color: white"> Sign in with Google </a></button>
+                    </div> <!-- form-group// -->
+                </form>
+            </article>
+        </div> <!-- card.// -->
+    </form>
+
+<!--<div class="container">-->
+
+<!--  <div class="row">-->
+<!--    <div class="col-sm-4">-->
+<!--      <h4 class="card-title mb-4 mt-1">  </h4>-->
+
+<!--</div>-->
+
+<!--</div>-->
+
+<!--</div>-->
+    <div style="height: 150px; width: 100%;">
+
+    </div>
+    <div class="introduction">
+        <h1 class="welcome">Welcome to iCrowdTask</h1>
+    </div>
+</div>
+</body>
+</html>

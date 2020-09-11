@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reset Password</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+        #pagebg{
+            background-image: url("image/background.jpeg");
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-position: center,center;
+            background-size: 100% 100%;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+        }
+        .card{
+            background-color: rgba(255,255,255,0.7);
+            width: 400px;
+            margin: 45px auto 0;
+        }
+    </style>
+</head>
+<body>
+<div id="pagebg">
+    <hr>
+    <form action="/reset" method="post">
+        <div class="card">
+            <article class="card-body">
+                <h4 class="card-title mb-4 mt-1">Find your account</h4>
+                <div class="form-group">
+                    <label>Your email</label>
+                    <input name="login_email" class="form-control" placeholder="Email" type="email">
+                </div> <!-- form-group// -->
+                <div class="form-group">
+                    <label>New password</label>
+                    <input name="login_password" class="form-control" placeholder="Password" type="password">
+                </div> <!-- form-group// -->
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary btn-block"> Reset and Login </button>
+                </div> <!-- form-group// -->
+            </article>
+        </div>
+    </form>
+</div>
+</body>
+</html>
