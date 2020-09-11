@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const validator = require("validator");
 const crypto = require("crypto");
 let url = require("url");
-let PATH;
+let PATH = "https://liuyijin-icrowdtask.herokuapp.com";
 
 const session = require("express-session");
 
@@ -58,7 +58,7 @@ app.use(session( {
 passport.use(new GoogleStrategy({
         clientID: "189239692909-sd1p1dkj3jefqt4204jgk5uugba3f324.apps.googleusercontent.com",
         clientSecret: "pMYRB3uiVXUJTraRiiITbXEW",
-        callbackURL: "https://www.baidu.com/"
+        callbackURL: "https://liuyijin-icrowdtask.herokuapp.com/auth/google/callback"
         // https://<projectname>.herokuapp.com/auth/google/callback
     },
     function(accessToken, refreshToken, profile, cb) {
