@@ -112,6 +112,8 @@ app.get('/auth/google',
 // set google callback
 app.get('/auth/google/callback',(req,res) => {
     // Successful authentication, redirect home.
+    // set a 1d cookie
+    req.session.cookie.maxAge = 86400000;
     req.session.sign = true;
     res.redirect('/homepage');
 });
